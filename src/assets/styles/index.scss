@@ -58,6 +58,14 @@ img {
   margin: 0 auto;
 }
 
+.hidden {
+  overflow-y: hidden;
+}
+
+.desktop-nav {
+  display: none;
+}
+
 
 // MY CLASSES ------------------------------------------------------------------------------------
 .container {
@@ -80,7 +88,9 @@ img {
   background: #fff;
   border: 2px solid #004FFF;
   border-radius: 35px;
-  padding: 17px 35px;
+  padding: 15px 35px;
+  color: #004FFF;
+  @include font(18px, 22px, 500);
 }
 
 
@@ -91,9 +101,14 @@ img {
 
   header {
     @include flex(row, center, space-between, 0);
+    position: relative;
 
     .logo {
       width: 117px;
+    }
+
+    .hamb {
+      margin-top: -10px;
     }
 
     nav {
@@ -102,16 +117,52 @@ img {
       ul {
         @include flex(row, center, center, 0);
 
-        li a {
-          padding: 15px 32px;
-          @include font(18px, 22px, 400);
+        li {
+          padding-left: 5px;
+
+          a {
+            padding: 15px 32px;
+            @include font(18px, 22px, 400);
+          }
         }
       }
     }
+
+    .mobile-nav {
+      width: 100%;
+      max-width: 300px;
+      background: rgba(0, 79, 255, 0.7);
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      min-height: 100vh;
+      padding: 50px 30px;
+      color: #fff;
+
+      ul {
+        @include flex(column, flex-end, flex-start, 10px);
+      }
+
+      .close {
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+
   }
 }
 
 // MEDIA QUERIES ----------------------------------------------------------------------------------------
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
 
+  .mobile-nav {
+    display: none;
+  }
 }
