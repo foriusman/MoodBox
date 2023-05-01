@@ -165,6 +165,37 @@ summary {
   align-items: center;
 }
 
+.white-text {
+  color: #fff;
+}
+
+.row {
+  @include flex(row, center, center, 5px);
+}
+
+.column {
+  @include flex(column, flex-start, center, 0px);
+}
+
+.call-btns {
+  justify-content: flex-start;
+
+  .btn2 {
+    background: #000;
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+    padding: 7px;
+    width: fit-content;
+
+    .play-icon {
+      width: 20%;
+    }
+  }
+}
+
+
+
+
 // MY STYLES -----------------------------------------------------------------------------------
 
 .header {
@@ -370,6 +401,22 @@ footer {
       div ul {
         @include flex(column, flex-start, center, 20px);
       }
+    }
+  }
+}
+
+.call-to {
+  @include background("../images/back.svg", center, no-repeat, cover);
+  border-radius: 12px;
+  max-width: 92%;
+  margin: auto;
+  
+  div {
+    &.text {
+      align-self: flex-end;
+    }
+    p {
+      text-align: left;
     }
   }
 }

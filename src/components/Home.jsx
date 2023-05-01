@@ -1,4 +1,5 @@
 import About from "./About";
+import CallToAction from "./CallToAction";
 import Faqs from "./Faqs";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -12,6 +13,7 @@ const Home = () => (
     <About />
     <Reviews />
     <Faqs />
+    <CallToAction />
 
     <Footer />
   </>
