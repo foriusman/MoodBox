@@ -34,7 +34,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #364f6b;
+  color: #000;
 }
 
 ul {
@@ -93,11 +93,43 @@ img {
   @include font(18px, 22px, 500);
 }
 
+.heading1 {
+  @include font(30px, 36px, 700);
+}
+
+.heading2 {
+  @include font(21px, 28px, 700);
+}
+
+.heading3 {
+  @include font(18px, 18px, 600);
+}
+
+.heading4 {
+  @include font(12px, 11px, 500);
+  text-transform: uppercase;
+  color: #004FFF;
+}
+
+.p {
+  @include font(14px, 19px, 400);
+  text-align: justify;
+}
+
+.column-row,
+.column-row-reverse {
+  @include flex(column, stretch, space-between, 20px);
+}
+
+.flex-items {
+  width: 45%;
+}
 
 
 // MY STYLES -----------------------------------------------------------------------------------
 
 .header {
+  min-height: 100vh;
 
   header {
     @include flex(row, center, space-between, 0);
@@ -167,9 +199,93 @@ img {
   }
 }
 
+// ABOUT SECTION---------------------------------------------------------------------------------------------------
+#about {
+
+  article {
+    padding: 24px 0;
+
+    div .onethird {
+      flex: 1;
+    }
+
+    div .twothird {
+      flex: 1.5;
+    }
+
+    .man {
+      margin-top: 30px;
+      @include background("../images/pic1.png", center, no-repeat, cover);
+      min-height: 500px;
+      width: 100%;
+    }
+
+    .head-icon {
+      @include flex(row, center, flex-start, 15px);
+
+      .icon {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #004FFF;
+        padding: 8px;
+      }
+    }
+
+    .phone {
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .phone1 {
+      @include background("../images/pic4.png", center, no-repeat, cover);
+    }
+
+    .phone2 {
+      @include background("../images/pic2.png", center, no-repeat, cover);
+    }
+    .phone3 {
+      @include background("../images/pic3.png", center, no-repeat, cover);
+    }
+  }
+}
+
+
 
 // MEDIA QUERIES ----------------------------------------------------------------------------------------
 @media only screen and (min-width: 768px) {
+  .partners {
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 25px;
+
+    img {
+      width: 10%;
+    }
+  }
+
+  .column-row {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .column-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #about {
+    margin: 40px auto;
+    article {
+      padding-bottom: 40px;
+
+      .man {
+        min-height: 900px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .desktop-nav {
     display: block;
   }
@@ -179,13 +295,45 @@ img {
     display: none;
   }
 
-  .partners {
-    flex-direction: row;
-    justify-content: space-around;
-    border-radius: 25px;
+  .heading1 {
+    @include font(48px, 48px, 700);
+  }
 
-    img {
-      width: 10%;
+  .heading2 {
+    @include font(35px, 35px, 700);
+  }
+
+  .heading3 {
+    @include font(28px, 28px, 600);
+  }
+
+  .heading4 {
+    @include font(18px, 18px, 500);
+  }
+
+  .p {
+    @include font(20px, 30px, 400);
+  }
+
+  .flex-items.phone {
+    min-height: 500px;
+  }
+
+  .column-row,
+  .column-row-reverse {
+    align-items: center;
+  }
+
+  #about {
+    article {
+      .head-icon {
+
+        .icon {
+          height: 48px;
+          width: 48px;
+          padding: 12px;
+        }
+      }
     }
   }
 }
