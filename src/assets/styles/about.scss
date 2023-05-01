@@ -1,0 +1,62 @@
+// PARTNERS STYLING ---------------------------------------------------------------------------
+.partners {
+  @include flex(column, center, center, 20px);
+  padding: 17px;
+  background: #000;
+
+  img {
+    width: 25%;
+  }
+}
+
+// ABOUT SECTION---------------------------------------------------------------------------------------------------
+#about {
+
+  article {
+    padding: 24px 0;
+
+    div .onethird {
+      flex: 1;
+    }
+
+    div .twothird {
+      flex: 1.5;
+    }
+
+    .man {
+      margin-top: 30px;
+      @include background("../images/pic1.png", center, no-repeat, cover);
+      min-height: 500px;
+      width: 100%;
+    }
+
+    .head-icon {
+      @include flex(row, center, flex-start, 15px);
+
+      .icon {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #004FFF;
+        padding: 8px;
+      }
+    }
+
+    .phone {
+      overflow: hidden;
+      border-radius: 24px;
+      min-height: 320px;
+    }
+
+    .phone1 {
+      @include background("../images/pic4.png", center, no-repeat, cover);
+    }
+
+    .phone2 {
+      @include background("../images/pic2.png", center, no-repeat, cover);
+    }
+    .phone3 {
+      @include background("../images/pic3.png", center, no-repeat, cover);
+    }
+  }
+}

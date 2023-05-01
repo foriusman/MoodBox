@@ -1,0 +1,45 @@
+
+
+footer {
+  div {
+    &.foot-nav {
+      margin: 30px auto 50px;
+    }
+    .social-icons {
+      ul {
+        @include flex(row, center, center, 0);
+
+        li {
+          padding-left: 5px;
+
+          a {
+            padding: 20px;
+          }
+        }
+      }
+    }
+
+    .links {
+
+      div ul {
+        @include flex(column, flex-start, center, 20px);
+      }
+    }
+  }
+}
+
+.call-to {
+  @include background("../images/back.svg", center, no-repeat, cover);
+  border-radius: 12px;
+  max-width: 92%;
+  margin: auto;
+  
+  div {
+    &.text {
+      align-self: flex-end;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}

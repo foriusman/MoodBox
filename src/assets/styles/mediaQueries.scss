@@ -1,0 +1,152 @@
+// MEDIA QUERIES ----------------------------------------------------------------------------------------
+@media only screen and (min-width: 768px) {
+  .partners {
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 25px;
+
+    img {
+      width: 10%;
+    }
+  }
+
+  .column-row {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .column-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #about {
+    margin: 40px auto;
+    article {
+      padding-bottom: 40px;
+
+      .man {
+        min-height: 900px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-nav,
+  .hamb {
+    display: none;
+  }
+
+  .heading1 {
+    @include font(48px, 48px, 700);
+  }
+
+  .heading2 {
+    @include font(35px, 35px, 700);
+  }
+
+  .heading3 {
+    @include font(28px, 28px, 600);
+  }
+
+  .heading4 {
+    @include font(18px, 18px, 500);
+  }
+
+  .heading5 {
+    @include font(14px, 18px, 700);
+  }
+
+  .p {
+    @include font(20px, 30px, 400);
+  }
+
+  .h5 {
+    @include font(24px, 30px, 400);
+  }
+
+  .call-btns .btn2 h4 {
+    min-width: 162px;
+  }
+
+  #about article .flex-items.phone {
+    align-self: stretch;
+    min-height: 500px;
+  }
+
+  .column-row,
+  .column-row-reverse {
+    align-items: center;
+  }
+
+  .links {
+    align-items: flex-start;
+  }
+
+  .padding-b {
+    padding-bottom: 20px;
+  }
+
+  .profession {
+    @include font(16px, 27px, 400);
+  }
+
+  #about {
+    article {
+      .head-icon {
+
+        .icon {
+          height: 48px;
+          width: 48px;
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  #reviews {
+    .review-card {
+      padding: 35px;
+      border-radius: 25px;
+
+      .card-img {
+        border-radius: 13px;
+      }
+
+      .intro {
+        margin-bottom: 30px;
+
+        .name {
+          @include font(24px, 14px, 600);
+        }
+      }
+    }
+  }
+
+  .header .headline {
+    flex-direction: row;
+    position: relative;
+
+    .float {
+      position: absolute;
+      width: 80%;
+      bottom: 10%;
+      left: 0;
+      z-index: 1000000;
+    }
+
+    .headline-text {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .headline div.flex-items .heading1 {
+    @include font(65px, 80px, 600);
+  }
+}
