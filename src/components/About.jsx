@@ -45,7 +45,7 @@ const About = () => (
 
     <article className="column-row-reverse">
       <div className="flex-items">
-        <div>
+        <div className="padding-b">
           <div className="head-icon padding-b">
             <div className="icon">
               <img src={star} alt="Bell icon" />
