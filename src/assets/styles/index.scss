@@ -190,7 +190,19 @@ summary {
     .play-icon {
       width: 20%;
     }
+
+    h4 {
+      min-width: 102px;
+    }
   }
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.h5 {
+  @include font(16px, 20px, 400);
 }
 
 
@@ -200,6 +212,9 @@ summary {
 
 .header {
   min-height: 100vh;
+  background-image: url("../images/back1.svg"), url("../images/back2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right top;
 
   header {
     @include flex(row, center, space-between, 0);
@@ -255,6 +270,79 @@ summary {
       }
     }
 
+  }
+
+  .headline {
+    align-items: flex-start;
+    height: 100%;
+    @include flex(column, stretch, space-between, 20px);
+
+    div.flex-items {
+      position: relative;
+
+      &.back-cont {
+        align-self: stretch;
+        min-height: 80vh;
+        height: auto;
+        z-index: 1000;
+        @include flex(row, stretch, stretch, 0);
+
+        .back {
+          @include background("../images/back3.png", center, no-repeat, cover);
+          position: relative;
+          border-radius: 18px;
+          width: 100%;
+          overflow: hidden;
+  
+          &::after {
+            content: "";
+            border-radius: 0 18px 0 18px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 56.5%;
+            background: #fff
+          }
+        }
+      }
+
+      .heading1 {
+        @include font(58px, 65px, 600);
+      }
+
+      h5 {
+        margin: 40px 0 0;
+      }
+      .blue-btn {
+        background: #004FFF;
+        border-radius: 10px;
+        padding: 18px 50px;
+        margin: 15px 0;
+        @include font(18px, 22px, 600);
+      }
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+
+      .woman {
+        @include background("../images/woman.png", center, no-repeat, cover);
+        border-radius: 18px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 38%;
+        height: 55%;
+      }
+    }
+
+    .float {
+      background: #ffffff60;
+      border-radius: 16px;
+      padding: 20px 4%;
+    }
   }
 }
 
@@ -492,6 +580,14 @@ footer {
     @include font(20px, 30px, 400);
   }
 
+  .h5 {
+    @include font(24px, 30px, 400);
+  }
+
+  .call-btns .btn2 h4 {
+    min-width: 162px;
+  }
+
   #about article .flex-items.phone {
     align-self: stretch;
     min-height: 500px;
@@ -544,5 +640,28 @@ footer {
         }
       }
     }
+  }
+
+  .header .headline {
+    flex-direction: row;
+    position: relative;
+
+    .float {
+      position: absolute;
+      width: 80%;
+      bottom: 50px;
+      left: 0;
+      z-index: 1000000;
+    }
+
+    .headline-text {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .headline div.flex-items .heading1 {
+    @include font(65px, 80px, 600);
   }
 }
