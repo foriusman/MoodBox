@@ -58,6 +58,14 @@ img {
   margin: 0 auto;
 }
 
+details summary::marker {
+  display:none;
+}
+
+summary {
+  list-style: none;
+}
+
 .hidden {
   overflow-y: hidden;
 }
@@ -149,6 +157,9 @@ img {
   color: #004FFF;
 }
 
+.profession {
+  @include font(9px, 14px, 400);
+}
 
 // MY STYLES -----------------------------------------------------------------------------------
 
@@ -307,9 +318,24 @@ img {
       .name {
         @include font(13px, 11px, 600);
       }
+    }
+  }
+}
 
-      .profession {
-        @include font(9px, 14px, 400);
+// FAQS ----------------------------------------------------------------------------------------
+#faqs {
+
+  .questions {
+    max-width: 1024px;
+    margin: auto;
+
+    details {
+      border-bottom: 1px solid #000;
+      padding: 15px;
+      margin-bottom: 40px;
+
+      summary {
+        @include flex(row, center, space-between, 0);
       }
     }
   }
@@ -400,6 +426,10 @@ img {
     padding-bottom: 20px;
   }
 
+  .profession {
+    @include font(16px, 27px, 400);
+  }
+
   #about {
     article {
       .head-icon {
@@ -427,10 +457,6 @@ img {
 
         .name {
           @include font(24px, 14px, 600);
-        }
-
-        .profession {
-          @include font(17px, 27px, 400);
         }
       }
     }

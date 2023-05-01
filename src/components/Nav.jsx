@@ -35,7 +35,7 @@ const Nav = () => {
             <AnchorLink href="#reviews" onClick={handleAnchorTags}>Reviews</AnchorLink>
           </li>
           <li>
-            <AnchorLink href="#" onClick={handleAnchorTags}>FAQs</AnchorLink>
+            <AnchorLink href="#faqs" onClick={handleAnchorTags}>FAQs</AnchorLink>
           </li>
           <li>
             <Link target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSdOgAoCOKXw39KgB754K7SHNermzt5cjJzfYk_jQ608vO0-yw/viewform?usp=sf_link" className="btn white-btn clash-display">Get Started</Link>
@@ -59,7 +59,7 @@ const Nav = () => {
             <a href="#reviews" onClick={handleAnchorTags}>Reviews</a>
           </li>
           <li>
-            <Link href="#" onClick={handleAnchorTags}>FAQs</Link>
+            <Link href="#faqs" onClick={handleAnchorTags}>FAQs</Link>
           </li>
           <li>
             <Link target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSdOgAoCOKXw39KgB754K7SHNermzt5cjJzfYk_jQ608vO0-yw/viewform?usp=sf_link" className="btn white-btn clash-display">Get Started</Link>
