@@ -156,6 +156,18 @@ img {
   }
 }
 
+// PARTNERS STYLING ---------------------------------------------------------------------------
+.partners {
+  @include flex(column, center, center, 20px);
+  padding: 17px;
+  background: #000;
+
+  img {
+    width: 25%;
+  }
+}
+
+
 // MEDIA QUERIES ----------------------------------------------------------------------------------------
 @media only screen and (min-width: 768px) {
   .desktop-nav {
@@ -165,5 +177,15 @@ img {
   .mobile-nav,
   .hamb {
     display: none;
+  }
+
+  .partners {
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 25px;
+
+    img {
+      width: 10%;
+    }
   }
 }
