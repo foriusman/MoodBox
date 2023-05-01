@@ -13,6 +13,11 @@ const Nav = () => {
     document.body.classList.toggle('hidden');
   }
 
+  const handleAnchorTags = () => {
+    setActive(false);
+    document.body.classList.remove('hidden');
+  }
+
   return (
     <header className="container">
       <div className="logo">
@@ -24,16 +29,16 @@ const Nav = () => {
       <nav className="desktop-nav">
         <ul>
           <li>
-            <AnchorLink href="#">About</AnchorLink>
+            <AnchorLink href="#" onClick={handleAnchorTags}>About</AnchorLink>
           </li>
           <li>
-            <AnchorLink href="#">Reviews</AnchorLink>
+            <AnchorLink href="#" onClick={handleAnchorTags}>Reviews</AnchorLink>
           </li>
           <li>
-            <AnchorLink href="#">FAQs</AnchorLink>
+            <AnchorLink href="#" onClick={handleAnchorTags}>FAQs</AnchorLink>
           </li>
           <li>
-            <button className="btn white-btn clash-display">Get Started</button>
+            <Link target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSdOgAoCOKXw39KgB754K7SHNermzt5cjJzfYk_jQ608vO0-yw/viewform?usp=sf_link" className="btn white-btn clash-display">Get Started</Link>
           </li>
         </ul>
       </nav>
@@ -48,16 +53,16 @@ const Nav = () => {
 
         <ul>
           <li>
-            <Link href="#">About</Link>
+            <Link href="#" onClick={handleAnchorTags}>About</Link>
           </li>
           <li>
-            <Link href="#">Reviews</Link>
+            <Link href="#" onClick={handleAnchorTags}>Reviews</Link>
           </li>
           <li>
-            <Link href="#">FAQs</Link>
+            <Link href="#" onClick={handleAnchorTags}>FAQs</Link>
           </li>
           <li>
-            <button className="btn white-btn clash-display">Get Started</button>
+            <Link target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSdOgAoCOKXw39KgB754K7SHNermzt5cjJzfYk_jQ608vO0-yw/viewform?usp=sf_link" className="btn white-btn clash-display">Get Started</Link>
           </li>
         </ul>
       </nav> }
