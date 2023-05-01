@@ -32,7 +32,7 @@ const Nav = () => {
             <AnchorLink href="#about" onClick={handleAnchorTags}>About</AnchorLink>
           </li>
           <li>
-            <AnchorLink href="#" onClick={handleAnchorTags}>Reviews</AnchorLink>
+            <AnchorLink href="#reviews" onClick={handleAnchorTags}>Reviews</AnchorLink>
           </li>
           <li>
             <AnchorLink href="#" onClick={handleAnchorTags}>FAQs</AnchorLink>
@@ -56,7 +56,7 @@ const Nav = () => {
             <a href="#about" onClick={handleAnchorTags}>About</a>
           </li>
           <li>
-            <Link href="#" onClick={handleAnchorTags}>Reviews</Link>
+            <a href="#reviews" onClick={handleAnchorTags}>Reviews</a>
           </li>
           <li>
             <Link href="#" onClick={handleAnchorTags}>FAQs</Link>
