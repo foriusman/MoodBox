@@ -161,6 +161,10 @@ summary {
   @include font(9px, 14px, 400);
 }
 
+.bottom {
+  align-items: center;
+}
+
 // MY STYLES -----------------------------------------------------------------------------------
 
 .header {
@@ -342,6 +346,35 @@ summary {
 }
 
 
+footer {
+  div {
+    &.foot-nav {
+      margin: 30px auto 50px;
+    }
+    .social-icons {
+      ul {
+        @include flex(row, center, center, 0);
+
+        li {
+          padding-left: 5px;
+
+          a {
+            padding: 20px;
+          }
+        }
+      }
+    }
+
+    .links {
+
+      div ul {
+        @include flex(column, flex-start, center, 20px);
+      }
+    }
+  }
+}
+
+
 
 
 
@@ -420,6 +453,10 @@ summary {
   .column-row,
   .column-row-reverse {
     align-items: center;
+  }
+
+  .links {
+    align-items: flex-start;
   }
 
   .padding-b {
