@@ -1,10 +1,10 @@
-import pic5 from "../assets/images/pic5.png";
+import pic5 from "../assets/images/pic5.svg";
 import pic6 from "../assets/images/pic6.png";
 
 const Reviews = () => (
   <section id="reviews">
-    <h5 className="heading5 heading4 center-text">testimonials</h5>
-    <h2 className="title heading clash-display heading2 center-text">What Our Customers are Saying</h2>
+    <h5 className="heading5 heading4 center-text letter-spacing">testimonials</h5>
+    <h2 className="title heading clash-display heading2 center-text padding-b">What Our Customers are Saying</h2>
     <div className="column-row">
       <div className="review-card flex-items blue">
         <div className="card-img">

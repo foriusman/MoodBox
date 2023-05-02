@@ -15,7 +15,7 @@ const About = () => (
 
     <article className="column-row-reverse">
       <div className="flex-items">
-        <h5 className="heading4 clash-display">Features</h5>
+        <h5 className="heading4 clash-display letter-spacing">Features</h5>
         <h2 className="heading1 heading clash-display padding-b">How MoodBox Can Help?</h2>
     
         <p className="p">MoodBox is designed to help you improve your mental wellbeing and manage your emotions. Our app offers a variety of tools and resources to help you cope with stress, anxiety, and other mental health challenges. Many people struggle to find the support they need to manage their mental health. Therapy and counseling can be expensive and time-consuming, and many people feel embarrassed or ashamed to seek help. This can lead to a cycle of negative emotions that can be difficult to break out of.</p>
@@ -27,7 +27,7 @@ const About = () => (
 
     <article className="column-row">
       <div className="flex-items">
-        <h5 className="heading4 clash-display">Advantagess</h5>
+        <h5 className="heading4 clash-display letter-spacing">Advantages</h5>
         <h2 className="heading1 heading clash-display padding-b">Personalized Support</h2>
         <div className="head-icon padding-b">
           <div className="icon">

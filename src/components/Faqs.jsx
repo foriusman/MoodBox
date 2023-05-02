@@ -37,7 +37,7 @@ const Faqs = () => {
 
   return (
     <section id="faqs" className="container">
-      <h5 className="heading5 blue-text heading center-text padding-b clash-display">FAQ</h5>
+      <h5 className="heading5 blue-text heading center-text padding-b clash-display letter-spacing">FAQ</h5>
       <h2 className="heading center-text heading2 clash-display">Frequently Asked Questions</h2>
       <p className="profession center-text padding-b">Get the answers to your questions about MoodBox.</p>
 

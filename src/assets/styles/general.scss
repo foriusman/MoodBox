@@ -192,3 +192,8 @@ summary {
   margin: 15px 0;
   @include font(18px, 22px, 600);
 }
+
+.letter-spacing {
+  letter-spacing: 2px;
+  font-weight: 500;
+}

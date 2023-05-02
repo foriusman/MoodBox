@@ -3,7 +3,7 @@
   .partners {
     flex-direction: row;
     justify-content: space-around;
-    border-radius: 25px;
+    border-radius: 22px;
 
     img {
       width: 10%;
@@ -31,9 +31,15 @@
   }
 
   #faqs {
+    margin-top: 100px;
+
     .heading2 {
       padding-bottom: 12px;
     }
+  }
+
+  .call-to {
+    margin: 100px 0;
   }
 }
 
@@ -76,7 +82,7 @@
   }
 
   .call-btns .btn2 h4 {
-    min-width: 162px;
+    min-width: 159px;
   }
 
   #about article .flex-items.phone {
@@ -156,7 +162,7 @@
     }
 
     .headline-text {
-      padding-bottom: 120px;
+      padding-bottom: 170px;
     }
   }
 }

@@ -38,7 +38,7 @@ const Headline = () => (
 
           <div className="column">
             <h5 className="heading5 white-text">Get it on</h5>
-            <h4 className="heading3 white-text">Google play</h4>
+            <h4 className="heading3 white-text google-font">Google play</h4>
           </div>
         </button>
 
