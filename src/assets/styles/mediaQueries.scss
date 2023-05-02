@@ -131,6 +131,16 @@
     flex-direction: row;
     position: relative;
 
+    div.flex-items {
+      &.back-cont {
+        @include flex(row, stretch, stretch, 0);
+
+        .back {
+          height: 100%;
+        }
+      }
+    }
+
     .float {
       position: absolute;
       width: 80%;

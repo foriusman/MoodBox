@@ -72,25 +72,11 @@
         align-self: stretch;
         min-height: 80vh;
         height: auto;
-        z-index: 1000;
-        @include flex(row, stretch, stretch, 0);
 
         .back {
-          @include background("../images/back3.png", center, no-repeat, cover);
-          position: relative;
-          border-radius: 18px;
-          width: 100%;
-          overflow: hidden;
-  
-          &::after {
-            content: "";
-            border-radius: 0 18px 0 18px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 40%;
-            height: 56.5%;
-            background: #fff
+          svg {
+            width: 100%;
+            height: auto;
           }
         }
       }
@@ -108,11 +94,6 @@
         padding: 18px 50px;
         margin: 15px 0;
         @include font(18px, 22px, 600);
-      }
-
-      svg {
-        width: 100%;
-        height: auto;
       }
 
       .woman {
