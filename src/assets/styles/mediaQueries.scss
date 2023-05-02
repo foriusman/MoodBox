@@ -133,7 +133,7 @@
 
     div.flex-items {
       &.back-cont {
-        @include flex(row, stretch, stretch, 0);
+        // @include flex(row, stretch, stretch, 0);
 
         .back {
           height: 100%;

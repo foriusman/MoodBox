@@ -24,17 +24,7 @@ const Headline = () => (
 
     <div className="flex-items back-cont">
       <div className="back">
-        <svg width="614" height="631" viewBox="0 0 614 631" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0C11.1929 0 0 11.1929 0 25V606C0 619.807 11.1929 631 25 631H589C602.807 631 614 619.807 614 606V390C614 376.193 602.807 365 589 365H391C377.193 365 366 353.807 366 340V25C366 11.1929 354.807 0 341 0H25Z" fill="url(#pattern0)"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0C11.1929 0 0 11.1929 0 25V606C0 619.807 11.1929 631 25 631H589C602.807 631 614 619.807 614 606V390C614 376.193 602.807 365 589 365H391C377.193 365 366 353.807 366 340V25C366 11.1929 354.807 0 341 0H25Z" fill="black" fill-opacity="0.2"/>
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image" transform="matrix(0.00150467 0 0 0.00146413 -0.270389 0)"/>
-            </pattern>
-
-            <image id="image" href="../assets/images/back3.png" width="1024" height="683" />
-          </defs>
-        </svg>
+        
       </div>
       <div className="woman"></div>
     </div>
