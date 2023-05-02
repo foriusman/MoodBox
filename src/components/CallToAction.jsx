@@ -16,7 +16,7 @@ const CallToAction = () => (
 
           <div className="column">
             <h5 className="heading5 white-text">Get it on</h5>
-            <h4 className="heading3">Google play</h4>
+            <h4 className="heading3 google-font">Google play</h4>
           </div>
         </button>
 

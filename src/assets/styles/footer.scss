@@ -20,6 +20,8 @@ footer {
     }
 
     .links {
+      width: 100%;
+      max-width: 720px;
 
       div ul {
         @include flex(column, flex-start, center, 20px);
@@ -37,7 +39,8 @@ footer {
           padding-left: 10px;
           height: 100%;
           border: none;
-          display: inline-block;
+          display: block;
+          width: 100%;
         }
 
         button {
@@ -60,6 +63,19 @@ footer {
   div {
     &.text {
       align-self: flex-end;
+
+
+      .call-btns {
+        button {
+          .heading5 {
+            padding-left: 4px;
+          }
+
+          .heading3 {
+            font-weight: 500;
+          }
+        }
+      }
     }
     p {
       text-align: left;

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "google_sans";   /*Can be any text*/
+  src: local("ProductSans"),
+    url("../font/ProductSans-Regular.ttf") format("truetype");
+}
+
 /* General styling --------------------------------------------------------------------------------------------------------------------------- */
 * {
   box-sizing: border-box;
@@ -49,12 +55,13 @@ summary {
 
 
 // MY CLASSES ------------------------------------------------------------------------------------
-.container {
-  padding: 32px 4%;
+
+.google-font {
+  font-family: 'google_sans';
 }
 
-.inter {
-  font-weight: inter;
+.container {
+  padding: 32px 4%;
 }
 
 .clash-display {
