@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import effect from "../assets/images/effect.svg";
 import play from "../assets/images/play.svg";
 import apple from "../assets/images/apple.svg";
+import customer from "../assets/images/customer.svg";
 
 const Headline = () => (
   <section className="container headline">
@@ -48,14 +49,20 @@ const Headline = () => (
           </div>
 
           <div className="column">
-            <h5 className="heading5 white-text">Get it on</h5>
+            <h5 className="heading5 white-text">Download on the</h5>
             <h4 className="heading3 white-text">Apple store</h4>
           </div>
         </button>
       </div>
 
-      <div>
-        our happy customers
+      <div className="row custom-review">
+        <div className="review-img">
+          <img src={customer} alt="Customers pictures" />
+        </div>
+        <div className="column heading">
+          <span>Our Happy customers</span>
+          <span>4.0 &#40;5.6k Reviews&#41;</span>
+        </div>
       </div>
     </div>
   </section>

@@ -95,9 +95,23 @@
       background: #ffffff60;
       border-radius: 16px;
       padding: 20px 4%;
+      justify-content: flex-start;
+      gap: 20px;
 
       .heading5 {
         padding-left: 6px;
+      }
+
+      .custom-review {
+        justify-content: flex-start;
+
+        .review-img {
+          max-width: 150px;
+        }
+
+        .column {
+          @include font(16px, 20px, 500);
+        }
       }
     }
   }

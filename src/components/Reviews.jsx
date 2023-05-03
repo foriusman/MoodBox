@@ -1,4 +1,4 @@
-import pic5 from "../assets/images/pic5.svg";
+import pic5 from "../assets/images/pic5.png";
 import pic6 from "../assets/images/pic6.png";
 
 const Reviews = () => (

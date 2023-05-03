@@ -8,7 +8,7 @@
   }
 
   .review-card {
-    padding: 24px;
+    padding: 35px 24px;
     border-radius: 13px;
 
     &.blue {
@@ -22,6 +22,9 @@
     .card-img {
       border-radius: 7px;
       overflow: hidden;
+      max-height: 352px;
+      margin-bottom: 15px;
+      filter: drop-shadow(1.86282px 3.72564px 22.3539px rgba(106, 112, 127, 0.1));
     }
 
     .intro {
