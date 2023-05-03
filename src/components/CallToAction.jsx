@@ -3,7 +3,7 @@ import apple from "../assets/images/apple.svg";
 import two from "../assets/images/two.png";
 
 const CallToAction = () => (
-  <section className="container call-to column-row">
+  <section className="container call-to column-row" data-aos="zoom-in-up">
     <div className="text white-text">
       <h4 className="clash-display heading2 heading padding-b">Try MoodBox Today</h4>
       <p className="p padding-b">Ready to take control of your mental health and wellbeing? Download MoodBox today and start your journey towards a happier, healthier life.</p>

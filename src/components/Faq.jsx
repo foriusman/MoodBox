@@ -11,7 +11,7 @@ const Faq = (props) => {
   }
 
   return (
-    <details onClick={handleClick}>
+    <details onClick={handleClick} data-aos="fade-up">
       <summary className="clash-display padding-b">
         <h3 className="heading3">{question}</h3>
         {icon && <BsChevronDown />}

@@ -3,7 +3,7 @@ import star from "../assets/images/star.svg";
 
 const About = () => (
   <section id="about" className="container">
-    <article>
+    <article data-aos="fade-up">
       <div className="column-row">
         <h2 className="heading2 onethird clash-display">Each Person, Couple and Family has Unique psychological journey!</h2>
         <p className="p twothird">The psychological journey of each person, couple, or family is shaped by a variety of factors including upbringing, genetics, culture, life experiences, and individual differences. No two people or families have the same experiences, perspectives, or coping mechanisms, and as such, each psychological journey is unique.</p>
@@ -13,7 +13,7 @@ const About = () => (
       </div>
     </article>
 
-    <article className="column-row-reverse">
+    <article className="column-row-reverse" data-aos="fade-up">
       <div className="flex-items">
         <h5 className="heading4 clash-display letter-spacing">Features</h5>
         <h2 className="heading1 heading clash-display padding-b">How MoodBox Can Help?</h2>
@@ -25,7 +25,7 @@ const About = () => (
       </div>
     </article>
 
-    <article className="column-row">
+    <article className="column-row" data-aos="fade-up">
       <div className="flex-items">
         <h5 className="heading4 clash-display letter-spacing">Advantages</h5>
         <h2 className="heading1 heading clash-display padding-b">Personalized Support</h2>
@@ -43,7 +43,7 @@ const About = () => (
       </div>
     </article>
 
-    <article className="column-row-reverse">
+    <article className="column-row-reverse" data-aos="fade-up">
       <div className="flex-items">
         <div className="padding-b">
           <div className="head-icon padding-b">

@@ -6,7 +6,7 @@ const Reviews = () => (
     <h5 className="heading5 heading4 center-text letter-spacing">testimonials</h5>
     <h2 className="title heading clash-display heading2 center-text padding-b">What Our Customers are Saying</h2>
     <div className="column-row">
-      <div className="review-card flex-items blue">
+      <div className="review-card flex-items blue" data-aos="fade-down">
         <div className="card-img">
           <img src={pic5} alt="profile picture" />
         </div>
@@ -19,7 +19,7 @@ const Reviews = () => (
         <p className="p">As an designer, I'm always under a lot of stress, but MoodBox helps me to manage my anxiety and stay focused on what's important</p>
       </div>
 
-      <div className="review-card flex-items orange">
+      <div className="review-card flex-items orange" data-aos="fade-up">
         <div className="card-img">
           <img src={pic6} alt="profile picture" />
         </div>
