@@ -1,4 +1,12 @@
 // MEDIA QUERIES ----------------------------------------------------------------------------------------
+@media only screen and (max-width: 768px) {
+  .header .headline div.flex-items {
+    &.back-cont .back {
+      min-height: 85vh;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .partners {
     flex-direction: row;
@@ -139,50 +147,61 @@
     }
   }
 
-  .header .headline {
-    flex-direction: row;
-    position: relative;
-
-    div.flex-items {
-      &.back-cont {
-
-        .back {
-          height: 100%;
+  .header {
+    margin-bottom: 60px;
+    
+    .headline {
+      flex-direction: row;
+      position: relative;
+  
+      div.flex-items {
+        &.back-cont {
+  
+          .back {
+            height: 100%;
+          }
         }
       }
-    }
-
-    .float {
-      position: absolute;
-      width: 80%;
-      bottom: 10%;
-      left: 4%;
-      z-index: 1000000;
-      padding: 25px;
-
-      .btn2 {
-        padding: 12px;
+  
+      .float {
+        position: absolute;
+        width: 80%;
+        bottom: 10%;
+        left: 4%;
+        z-index: 100;
+        padding: 25px;
+  
+        .btn2 {
+          padding: 12px;
+        }
       }
-    }
-
-    .headline-text {
-      padding-bottom: 170px;
+  
+      .headline-text {
+        padding-bottom: 170px;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 1366px) {
-  .header .headline {
-    div.flex-items .heading1 {
-      @include font(65px, 80px, 600);
-    }
+  .header {
+    
+    .headline {
+      height: auto;
 
-    .float {
-      gap: 90px;
-    }
-
-    .headline-text {
-      padding-bottom: 200px;
+      div.flex-items .heading1 {
+        @include font(65px, 80px, 600);
+      }
+  
+      .float {
+        gap: 90px;
+      }
+  
+      .headline-text {
+        padding-bottom: 200px;
+      }
     }
   }
 }
+
+// @media only screen and (min-width: )

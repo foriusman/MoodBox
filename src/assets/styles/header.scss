@@ -1,8 +1,9 @@
 .header {
-  min-height: 100vh;
+  height: fit-content;
   background-image: url("../images/back1.svg"), url("../images/back2.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: left center, right top;
+  margin-bottom: 20px;
 
   header {
     @include flex(row, center, space-between, 0);
@@ -69,7 +70,26 @@
       position: relative;
 
       &.back-cont {
-        background-color: #000;
+
+        .back {
+          @include background("../images/back3.png", center, no-repeat, cover);
+          position: relative;
+          border-radius: 18px;
+          width: 100%;
+          overflow: hidden;
+
+          &::after {
+            content: "";
+            border-radius: 0 18px 0 18px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 56.5%;
+            background: #fff;
+            @include background("../images/back1.svg", left top, no-repeat, cover);
+          }
+        }
       }
 
       .heading1 {
