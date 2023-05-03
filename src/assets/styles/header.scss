@@ -29,6 +29,11 @@
           a {
             padding: 15px 32px;
             @include font(18px, 22px, 400);
+            transition: color 0.7s;
+
+            &:hover {
+              color: #004fff;
+            }
           }
         }
       }

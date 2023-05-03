@@ -20,7 +20,7 @@ const Headline = () => (
       <p className="p">MoodBox is a powerful mental health platform that provides young people with access to medical support anytime, anywhere. </p>
       <h5 className="h5">Take a quick survey on Mental Health</h5>
 
-      <Link target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSdOgAoCOKXw39KgB754K7SHNermzt5cjJzfYk_jQ608vO0-yw/viewform?usp=sf_link" className="blue-btn white-text clash-display">Get Started</Link>
+      <Link target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSdOgAoCOKXw39KgB754K7SHNermzt5cjJzfYk_jQ608vO0-yw/viewform?usp=sf_link" className="blue-btn white-text clash-display btn">Get Started</Link>
     </div>
 
     <div className="flex-items back-cont">
@@ -32,7 +32,7 @@ const Headline = () => (
 
     <div className="float column-row">
       <div className="row call-btns">
-        <button className="btn2 row heading">
+        <button className="btn2 row heading btn">
           <div className="play-icon">
             <img src={play} alt="" />
           </div>
@@ -43,7 +43,7 @@ const Headline = () => (
           </div>
         </button>
 
-        <button className="btn2 row heading">
+        <button className="btn2 row heading btn">
           <div className="play-icon">
             <img src={apple} alt="" />
           </div>

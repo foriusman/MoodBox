@@ -9,7 +9,7 @@ const CallToAction = () => (
       <p className="p padding-b">Ready to take control of your mental health and wellbeing? Download MoodBox today and start your journey towards a happier, healthier life.</p>
 
       <div className="row call-btns">
-        <button className="btn2 row heading">
+        <button className="btn2 btn row heading">
           <div className="play-icon">
             <img src={play} alt="" />
           </div>
@@ -20,7 +20,7 @@ const CallToAction = () => (
           </div>
         </button>
 
-        <button className="btn2 row heading">
+        <button className="btn2 btn row heading">
           <div className="play-icon">
             <img src={apple} alt="" />
           </div>
