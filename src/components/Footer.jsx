@@ -57,7 +57,11 @@ const Footer = () => (
       </div>
 
       <div className="call">
-        <h3 className="heading3">Sign up for our newsletter</h3>
+        <h3 className="heading3 clash-display">Sign up for our newsletter</h3>
+        <div className="input row">
+          <input type="email" placeholder="Enter email" />
+          <button className="blue-btn btn white-text">subscribe</button>
+        </div>
       </div>
     </div>
 

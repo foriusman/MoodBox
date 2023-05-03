@@ -3,7 +3,7 @@ import star from "../assets/images/star.svg";
 
 const About = () => (
   <section id="about" className="container">
-    <article>
+    <article data-aos="fade-up">
       <div className="column-row">
         <h2 className="heading2 onethird clash-display">Each Person, Couple and Family has Unique psychological journey!</h2>
         <p className="p twothird">The psychological journey of each person, couple, or family is shaped by a variety of factors including upbringing, genetics, culture, life experiences, and individual differences. No two people or families have the same experiences, perspectives, or coping mechanisms, and as such, each psychological journey is unique.</p>
@@ -13,9 +13,9 @@ const About = () => (
       </div>
     </article>
 
-    <article className="column-row-reverse">
+    <article className="column-row-reverse" data-aos="fade-up">
       <div className="flex-items">
-        <h5 className="heading4 clash-display">Features</h5>
+        <h5 className="heading4 clash-display letter-spacing">Features</h5>
         <h2 className="heading1 heading clash-display padding-b">How MoodBox Can Help?</h2>
     
         <p className="p">MoodBox is designed to help you improve your mental wellbeing and manage your emotions. Our app offers a variety of tools and resources to help you cope with stress, anxiety, and other mental health challenges. Many people struggle to find the support they need to manage their mental health. Therapy and counseling can be expensive and time-consuming, and many people feel embarrassed or ashamed to seek help. This can lead to a cycle of negative emotions that can be difficult to break out of.</p>
@@ -25,9 +25,9 @@ const About = () => (
       </div>
     </article>
 
-    <article className="column-row">
+    <article className="column-row" data-aos="fade-up">
       <div className="flex-items">
-        <h5 className="heading4 clash-display">Advantagess</h5>
+        <h5 className="heading4 clash-display letter-spacing">Advantages</h5>
         <h2 className="heading1 heading clash-display padding-b">Personalized Support</h2>
         <div className="head-icon padding-b">
           <div className="icon">
@@ -43,7 +43,7 @@ const About = () => (
       </div>
     </article>
 
-    <article className="column-row-reverse">
+    <article className="column-row-reverse" data-aos="fade-up">
       <div className="flex-items">
         <div className="padding-b">
           <div className="head-icon padding-b">
